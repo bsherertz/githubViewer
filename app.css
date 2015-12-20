@@ -1,0 +1,25 @@
+body {
+    margin: 30px 0;
+}
+.contributors ul li {
+    display: inline-block;
+    float: left;
+    max-width: 120px;
+}
+
+.contributors ul li img {
+    max-width: 120px;
+}
+
+.custom-input-group .input-group-addon{
+    background: white !important; 
+}
+.custom-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.custom-input-group button{
+    border:0;
+    background:transparent;
+}

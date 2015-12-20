@@ -1,0 +1,19 @@
+<div>
+    {{countdown}}
+    <form name="searchUser" ng-submit="search(username)">
+        <div class="input-group custom-input-group">
+            <input class="form-control" type="search" placeholder="Username to find" ng-model="username" uib-typeahead="item.login for item in getTASearch($viewValue)" typeahead-loading="loadingUsers" typeahead-no-results="noResults" />
+            <span class="input-group-addon">
+                <button type="submit" value="Search">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+            </span>
+        </div>
+        <div>
+            <i ng-show="loadingUsers" class="glyphicon glyphicon-refresh"></i>
+            <div ng-show="noResults">
+                <i class="glyphicon glyphicon-remove"></i> No Results Found
+            </div>
+        </div>
+    </form>
+</div>

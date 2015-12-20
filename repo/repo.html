@@ -1,0 +1,21 @@
+<div class="contributors">
+    <h2>{{repo.name}}</h2>
+    <p>Issues open: {{repo.open_issues_count}}</p>
+    <div class="row">
+        <ul class="list-inline col-xs-12">
+            <li ng-repeat="user in repo.contributors">
+                <a href="#/user/{{user.login}}">
+                    <img ng-src="{{user.avatar_url}}" alt="{{user.login}}">
+                    <span>{{user.login}}</span>
+                </a>
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+    <div class="btn-group">
+        <a class="btn btn-default" href="#/main">Back to search</a>
+    </div>
+    <div class="btn-group">
+        <a class="btn btn-default" href="#/user/{{repo.owner.login}}">Back to {{repo.owner.login}}</a>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+{
+  "name": "githubviewer",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "~1.4.8",
+    "bootstrap": "~3.3.6",
+    "jquery": "~1.10.2"
+  },
+  "private": true
+}
